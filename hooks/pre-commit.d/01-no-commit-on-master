@@ -12,4 +12,5 @@ result=$(git rev-parse --abbrev-ref HEAD)
 
 if [[ "$result" == "master" ]]; then 
   echo "Cannot commit on master"
+  exit 1
 fi

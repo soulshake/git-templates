@@ -1,8 +1,9 @@
 #!/bin/bash
 
+# Exit if any pre-commit scripts fail
 set -e
-#python3 $HOME/.git-templates/tools/multihooks.py
-#for f in $(find -L ./pre-commit.d/ -maxdepth 1 -type f); do
-for f in $(find -L .git/hooks/pre-commit.d/ -maxdepth 1 -type f); do
-    $f
+
+# Execute each pre-commit file in order
+for f in .git/hooks/pre-commit.d/*; do
+    [ -x $f ] && [ -f $f ] && $f
 done
