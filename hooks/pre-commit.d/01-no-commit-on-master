@@ -11,6 +11,6 @@ set -e
 result=$(git rev-parse --abbrev-ref HEAD)
 
 if [[ "$result" == "master" ]]; then 
-  echo "Cannot commit on master"
+  echo "Cannot commit on master (bypass with -n or --no-verify)"
   exit 1
 fi

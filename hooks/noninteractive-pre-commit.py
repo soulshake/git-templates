@@ -1,1 +1,0 @@
-/home/aj/.git-templates/tools/multihooks.py
