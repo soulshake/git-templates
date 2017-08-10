@@ -11,6 +11,9 @@ set -e
 result=$(git rev-parse --abbrev-ref HEAD)
 
 if [[ "$result" == "master" ]]; then 
-  echo "Cannot commit on master (bypass with -n or --no-verify)"
-  exit 1
+    # Only prevent committing on master if not on our own repo
+    if [[ ! $(git config remote.origin.url) == *$(git config github.user)* ]]; then
+      echo "Cannot commit on master (bypass with -n or --no-verify)"
+      exit 1
+    fi
 fi
