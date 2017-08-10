@@ -1,0 +1,1 @@
+pre-commit-shell/pre_commit_hooks/shell-lint.sh

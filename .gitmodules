@@ -1,0 +1,11 @@
+[submodule "git-spell-check"]
+  path = hooks/pre-commit.d/git-spell-check
+  url = git@github.com:soulshake/git-spell-check.git
+[submodule "hooks/pre-commit.d/pre-commit-shell"]
+	path = hooks/pre-commit.d/pre-commit-shell
+	url = git@github.com:detailyang/pre-commit-shell.git
+	branch = master
+[submodule "hooks/pre-commit.d/pre-commit-shfmt"]
+	path = hooks/pre-commit.d/pre-commit-shfmt
+	url = git@github.com:pecigonzalo/pre-commit-shfmt.git
+	branch = master

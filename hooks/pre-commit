@@ -4,6 +4,8 @@
 set -e
 
 # Execute each pre-commit file in order
-for f in .git/hooks/pre-commit.d/*; do
-    [ -x $f ] && [ -f $f ] && $f
+for f in .git/hooks/pre-commit.d/*.sh; do
+    if [ -x $f ] && [ -f $f ]; then
+        $f
+    fi
 done
