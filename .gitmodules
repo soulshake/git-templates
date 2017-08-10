@@ -3,7 +3,7 @@
   url = git@github.com:soulshake/git-spell-check.git
 [submodule "hooks/pre-commit.d/pre-commit-shell"]
 	path = hooks/pre-commit.d/pre-commit-shell
-	url = git@github.com:detailyang/pre-commit-shell.git
+	url = git@github.com:soulshake/pre-commit-shell.git
 	branch = master
 [submodule "hooks/pre-commit.d/pre-commit-shfmt"]
 	path = hooks/pre-commit.d/pre-commit-shfmt
