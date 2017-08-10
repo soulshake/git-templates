@@ -7,5 +7,5 @@
 	branch = master
 [submodule "hooks/pre-commit.d/pre-commit-shfmt"]
 	path = hooks/pre-commit.d/pre-commit-shfmt
-	url = git@github.com:pecigonzalo/pre-commit-shfmt.git
+	url = git@github.com:soulshake/pre-commit-shfmt.git
 	branch = master
