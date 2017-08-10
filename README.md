@@ -8,6 +8,12 @@ Note: This directory should either be located at `~/.git-templates` or you need 
 
 To get these templates in your existing repos, you can delete the repository's `.git/hooks` directory and run `git init` again to pull the new hooks in `~/.git-templates/hooks`.
 
+## Dependencies
+
+- `shellcheck`
+- `shellfmt`
+- `aspell` (your personal whitelist will be located at `~/.git-spell-check`)
+
 ## Pre-commit hooks
 
 This repo contains the following pre-commit hooks:
