@@ -1,4 +1,5 @@
 #!/bin/bash
+# Run 'travis lint' before accepting a git commit
 
 travis_yml_path="$(git rev-parse --show-toplevel)/.travis.yml"
 
@@ -13,4 +14,4 @@ if [ ! -x "$travis_path" ]; then
     exit 0
 fi
 
-echo travis lint --exit-code "$travis_yml_path"
+travis lint --exit-code "$travis_yml_path"
