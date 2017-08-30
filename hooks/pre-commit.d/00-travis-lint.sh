@@ -10,8 +10,8 @@ fi
 
 travis_path="$(/bin/which travis)"
 if [ ! -x "$travis_path" ]; then
-    echo "travis CLI not installed or not in PATH; skipping pre-commit hook 'travis lint'"
+    echo "[WARN] travis CLI not installed or not in PATH; skipping pre-commit hook 'travis lint'"
     exit 0
 fi
 
-travis lint --exit-code "$travis_yml_path"
+travis lint "$travis_yml_path"
