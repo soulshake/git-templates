@@ -4,3 +4,6 @@ git submodule update --init --recursive
 
 command -v git-lfs >/dev/null 2>&1 || { echo >&2 "\nThis repository is configured for Git LFS but 'git-lfs' was not found on your path. If you no longer wish to use Git LFS, remove this hook by deleting .git/hooks/post-checkout.\n"; exit 2; }
 git lfs post-checkout "$@"
+
+# ensure username is prepended to branch name
+# TODO: https://stackoverflow.com/questions/1011557/is-there-a-way-to-trigger-a-hook-after-a-new-branch-has-been-checked-out-in-git
